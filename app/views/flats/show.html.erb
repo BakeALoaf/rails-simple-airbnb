@@ -1,0 +1,45 @@
+<div class="map" style="background-image: url('https://media.istockphoto.com/id/1415886887/de/foto/frisch-gestrichenes-handwerker-bungalowhaus.jpg?s=1024x1024&w=is&k=20&c=IzuIrwKF4yikzBsMhIMZj6FjwRpmjel_bIVxogPuWyQ=')"></div>
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-show-card">
+        <h1><%= @flat.name %></h1>
+        <p class="flat-show-address"><%= @flat.address %></p>
+      </div>
+      <div class="flat-show-card">
+        <h3>More info...</h3>
+        <p><%= @flat.description %></p>
+        <div class="map" style="background-image: url('https://www.google.com/maps/vt/data=PWZwL0wgHDxikbSCqnQBwAzy2wi1M3iy5Y3J-9r9n_oQWaWErpomL4eimDAn49-6I5kQMW8Bk6idEaOfaFjaAc7wz3Pg4Ex4Wukcb3XQRYLunx2zrUwSSOJQs-0-hQ9kpRdKQ_YF49VqrFvClLEmiXzIuyHWoJA7Nn9n710VZzjEizkhxEKeN3Kz175064M3mQeT58gdAsYR0SR-xSLAJ56HyMYccxWnSBqxS_y0o64Gb-UbIZ4')"></div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="flat-show-card">
+        <h5>Book it!</h5>
+
+        <form action="">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">From:</span>
+            <input type="text" class="form-control" placeholder="23/11/2022" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mt-2">
+            <span class="input-group-addon" id="basic-addon1">To:</span>
+            <input type="text" class="form-control" placeholder="23/12git/2022" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+        </form>
+      </div>
+      <div class="flat-show-card">
+        <h3>Details</h3>
+        <div class="flex">
+          <div class="flex">
+            <i class="material-icons mr-2">people</i><span><%= @flat.number_of_guests %></span>
+          </div>
+          <div class="flex ml-3">
+            <i class="material-icons mr-2">euro_symbol</i> <%= @flat.price_per_night %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
